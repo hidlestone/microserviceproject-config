@@ -1,0 +1,19 @@
+﻿spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev     #开发环境
+  application: 
+    name: microserviceproject-config-payn-dev
+---
+spring:
+  profiles: test   #测试环境
+  application: 
+    name: microserviceproject-config-payn-test
+#  请保存为UTF-8格式
+ 
+ 
+ 
+
