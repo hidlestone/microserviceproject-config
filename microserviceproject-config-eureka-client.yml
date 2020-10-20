@@ -21,7 +21,7 @@ eureka:
       defaultZone: http://eureka7101.com:7101/eureka/
 ---
 server: 
-  port: 7101 #注册中心占用7001端口,冒号后面必须要有空格
+  port: 7102 #注册中心占用7001端口,冒号后面必须要有空格
    
 spring: 
   profiles: test
