@@ -4,7 +4,7 @@ spring:
     - dev
 --- 
 server:
-  port: 8101
+  port: 8101 #注册中心占用7001端口,冒号后面必须要有空格
 spring: 
    profiles: dev
    application: 
@@ -24,7 +24,7 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.payn.springcloud.entity
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml
+  - classpath:mybatis/mapper/*.xml
  
 eureka: 
   client: #客户端注册进eureka服务列表内
@@ -41,7 +41,7 @@ info:
   build.version: $project.version$
 ---
 server:
-  port: 8101
+  port: 8101 
 spring: 
    profiles: test
    application: 
@@ -63,7 +63,7 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.payn.springcloud.entity
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml
+  - classpath:mybatis/mapper/*.xml
  
 eureka: 
   client: #客户端注册进eureka服务列表内
