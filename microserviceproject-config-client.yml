@@ -13,6 +13,8 @@ eureka:
   client: 
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/   
+config:
+  info: dev 8201
 ---
 server: 
   port: 8202 
@@ -24,6 +26,7 @@ eureka:
   client: 
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/
- 
+config:
+  info: test 8202
  
 
